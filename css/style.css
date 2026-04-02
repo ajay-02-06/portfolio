@@ -1,0 +1,73 @@
+/* Ajay Kumar Portfolio — custom layer on Bootstrap 5 */
+:root {
+  --brand-primary: #0d6efd;
+  --brand-dark: #0b1220;
+  --hero-gradient: linear-gradient(135deg, #0b1220 0%, #1a2a4a 45%, #0d3b66 100%);
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.hero-section {
+  background: var(--hero-gradient);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 70% 20%, rgba(13, 110, 253, 0.35), transparent 55%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.profile-ring {
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.35);
+}
+
+.carousel-caption {
+  background: rgba(11, 18, 32, 0.75);
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  bottom: 1.5rem;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.table-hover tbody tr:hover {
+  --bs-table-hover-bg: rgba(13, 110, 253, 0.08);
+}
+
+.form-invalid-feedback {
+  display: none;
+  font-size: 0.875rem;
+  color: var(--bs-danger);
+}
+
+.was-validated .form-invalid-feedback.show,
+.is-invalid ~ .form-invalid-feedback {
+  display: block;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Ajay Kumar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="bi bi-code-slash me-2"></i>Ajay Kumar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="qualifications.html">Qualifications</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="portfolioDropdown">
+              <li><a class="dropdown-item" href="skills.html"><i class="bi bi-graph-up-arrow me-2"></i>Skills</a></li>
+              <li><a class="dropdown-item" href="certifications.html"><i class="bi bi-award me-2"></i>Certifications</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <h1 class="display-6 fw-bold mb-3">Contact</h1>
+          <p class="text-muted mb-4">Reach out for collaborations, academic queries, or opportunities. Details match my portfolio.</p>
+          <ul class="list-unstyled small">
+            <li class="mb-3">
+              <i class="bi bi-envelope-fill text-primary me-2"></i>
+              <a href="mailto:ajay024it@gmail.com">ajay024it@gmail.com</a>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-phone-fill text-primary me-2"></i>
+              <a href="tel:+919493076135">+91 94930 76135</a>
+            </li>
+            <li class="mb-3">
+              <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+              Hyderabad, Telangana, India
+            </li>
+            <li>
+              <i class="bi bi-building text-primary me-2"></i>
+              Vasavi College of Engineering — B.Tech (IT)
+            </li>
+          </ul>
+          <div class="alert alert-secondary mt-4 mb-0" role="alert">
+            <i class="bi bi-shield-check me-2"></i>
+            The form uses HTML5 validation plus JavaScript checks for a <strong>10-digit</strong> mobile number.
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="card shadow border-0">
+            <div class="card-body p-4">
+              <h2 class="h5 fw-bold mb-3">Send a message</h2>
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full name</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="addon-name"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your name" required aria-describedby="addon-name" autocomplete="name">
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="addon-email"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required aria-describedby="addon-email" autocomplete="email">
+                    <div class="invalid-feedback">Enter a valid email address.</div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Mobile (10 digits)</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="addon-phone"><i class="bi bi-phone"></i></span>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="9493076135" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" required aria-describedby="addon-phone" autocomplete="tel-national">
+                    <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
+                  </div>
+                  <div id="phoneFeedback" class="form-invalid-feedback"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="What is this about?" required>
+                  <div class="invalid-feedback">Please add a subject.</div>
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+                  <div class="invalid-feedback">Please write a short message.</div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg px-4">
+                  <i class="bi bi-send me-2"></i>Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="modal fade" id="submitSuccessModal" tabindex="-1" aria-labelledby="submitSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <h2 class="modal-title fs-5" id="submitSuccessLabel">Validation passed</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0">All fields are valid and your mobile number has 10 digits. In a live deployment you would connect this form to a backend or email service; for the assignment, client-side validation is complete.</p>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white-50 py-4">
+    <div class="container small text-center">
+      © <span id="y"></span> Ajay Kumar · <a class="link-light text-decoration-none" href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
